@@ -25,14 +25,14 @@ func main() {
 	// }
 
 	//Import terms data
-	if err := services.ImportTermsData(); err != nil {
-		log.Fatalf("Error importing terms data: %v", err)
-	}
+	// if err := services.ImportTermsData(); err != nil {
+	// 	log.Fatalf("Error importing terms data: %v", err)
+	// }
 
 	// Import prices data
-	// if err := services.ImportPricesData(); err != nil {
-	// 	log.Fatalf("Error importing prices data: %v", err)
-	// } else {
-	// 	log.Println("Prices data import completed successfully.")
-	// }
+	if err := services.ImportPricesData(); err != nil {
+		log.Fatalf("Error importing prices data: %v", err)
+	} else {
+		log.Println("Prices data import completed successfully.")
+	}
 }
