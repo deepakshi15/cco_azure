@@ -18,11 +18,11 @@ func main() {
 	// }
 
 	// Import SKU data
-	// if err := services.ImportSkuData(); err != nil { 
-	// 	log.Fatalf("Error importing SKU data: %v", err)
-	// } else {
-	// 	log.Println("SKU data import completed successfully.")
-	// }
+	if err := services.ImportSkuData(); err != nil { 
+		log.Fatalf("Error importing SKU data: %v", err)
+	} else {
+		log.Println("SKU data import completed successfully.")
+	}
 
 	//Import terms data
 	// if err := services.ImportTermsData(); err != nil {
@@ -30,9 +30,9 @@ func main() {
 	// }
 
 	// Import prices data
-	if err := services.ImportPricesData(); err != nil {
-		log.Fatalf("Error importing prices data: %v", err)
-	} else {
-		log.Println("Prices data import completed successfully.")
-	}
+	// if err := services.ImportPricesData(); err != nil {
+	// 	log.Fatalf("Error importing prices data: %v", err)
+	// } else {
+	// 	log.Println("Prices data import completed successfully.")
+	// }
 }
